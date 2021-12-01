@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!--Tailwind CSS ↓-->
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+        <title>SAMPLE</title>
+    </head>
+
+    <body>
+        <div class="flex flex-wrap justify-center justify-around my-10">
+            <canvas class="flex-initial" id="mychart" width="250"></canvas>
+            <canvas class="flex-initial" id="mychart2" width="250"></canvas>
+            <canvas class="flex-initial" id="mychart3" width="250"></canvas>
+            <canvas class="flex-initial" id="mychart4" width="250"></canvas>
+            <canvas class="flex-initial" id="mychart5" width="250"></canvas>
+        </div>
+
+        <!--Chart.js version3.6.0  ↓-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.0/chart.min.js"></script>
+        <script src="main.js" type="text/javascript"></script>
+        <script>
+            drawChart("C++",4,'mychart');
+            drawChart("Python",4,'mychart2');
+            drawChart("HTML/CSS",3,'mychart3');
+            drawChart("JavaScript",2,'mychart4');
+            drawChart("Java",1,'mychart5');
+        </script>
+    </body>
+</html>
